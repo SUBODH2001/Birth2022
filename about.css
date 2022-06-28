@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: linear-gradient(to top left, rgba(238,156,167,0.3),rgba(255,221,225,0.1)  );
+    height: 100vh;
+    padding: 20px;
+}
+
+.board{
+    background: linear-gradient(to bottom right, rgba(238,156,167,0.7),rgba(255,221,225,0.3));
+    width: 60%;
+    backdrop-filter: blur(0.5rem);
+    box-shadow:  5px 5px 20px rgba(159, 43, 104,.3);
+    margin: 10% auto;
+    padding: 25px;
+    border-radius: 2rem;
+    text-align: center;
+    min-height: 70%;
+    justify-content: center;
+    z-index: 5;
+    color: 	rgb(159, 43, 104);
+}
+
+
+.circle1{
+    height: 250px;
+    width: 250px;
+    background: linear-gradient(to bottom right, rgba(238,156,167,0.7),rgba(255,221,225,0.3) );
+    border-radius: 10rem;
+    position: absolute;
+    top: 15%;
+    left:70%;
+}
+.circle2{
+    height: 250px;
+    width: 250px;
+    background: linear-gradient(to bottom right, rgba(238,156,167,0.7),rgba(255,221,225,0.3) );
+    border-radius: 10rem;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+}
+
+h1{
+    padding: 5%;
+    font-size: 40px;
+    text-decoration: underline;
+}
+p{
+    font-size: 25px;
+    padding: 50px 50px;
+}
+@media(max-width: 768px){
+
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        background: linear-gradient(to top left, rgba(238,156,167,0.3),rgba(255,221,225,0.1)  );
+    
+    }
+    
+    .board{
+        background: linear-gradient(to bottom right, rgba(238,156,167,0.7),rgba(255,221,225,0.3));
+        width: 95%;
+        backdrop-filter: blur(0.5rem);
+        box-shadow:  5px 5px 20px rgba(159, 43, 104,.3);
+        margin: 10% auto;
+        padding: 20px 5px;
+        border-radius: 2rem;
+        text-align: center;
+        min-height: 80%;
+        overflow-y: scroll;
+        justify-content: center;
+        z-index: 5;
+        color: 	rgb(159, 43, 104);
+    }
+}
